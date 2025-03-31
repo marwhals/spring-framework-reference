@@ -11,5 +11,6 @@
 
     <modules>
         <module>Section2BuildingaSpringBootWebApp</module>
+        <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
 </project>
