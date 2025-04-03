@@ -1,4 +1,4 @@
-package java.com.example.spring6webapp;
+package com.example.spring6webapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
