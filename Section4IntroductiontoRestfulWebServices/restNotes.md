@@ -184,4 +184,4 @@ A[Level 3: Hypermedia Controls] --> B[Level 2: HTTP Verbs] --> C[Level 1: Resour
 - The correct answer is that it does not matter
   - The framework used is decoupled from Spring via the HTTP / JSON (or XML) layer
   - All of these libraries can consumer RESTful APIs
-  - Server side can be Spring Boot, .NET, Ruby on Rails, etc - the RESTful API abstracts the implementation
+  - Server side can be Spring Boot, .NET, Ruby on Rails, etc. - the RESTful API abstracts the implementation

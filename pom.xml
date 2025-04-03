@@ -12,6 +12,7 @@
     <modules>
         <module>Section2BuildingaSpringBootWebApp</module>
         <module>Section3PerformingDependencyInjectionwithSpring</module>
+        <module>Section5UsingProjectLombokwithSpringBoot</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
 </project>
