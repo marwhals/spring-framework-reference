@@ -1,0 +1,24 @@
+### Get all customers
+GET http://localhost:8080/api/v1/customer
+Accept: application/json
+
+### Get a single customer by ID
+GET http://localhost:8080/api/v1/customer/123e4567-e89b-12d3-a456-426614174000
+Accept: application/json
+
+### Create a new customer
+POST http://localhost:8080/api/v1/customer
+Content-Type: application/json
+
+{
+  "id": "123e4567-e89b-12d3-a456-426614174000",
+  "name": "John Doe"
+}
+
+### Update an existing customer
+PUT http://localhost:8080/api/v1/customer/123e4567-e89b-12d3-a456-426614174000
+Content-Type: application/json
+
+{
+  "name": "Jane Doe"
+}
