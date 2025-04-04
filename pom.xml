@@ -15,6 +15,7 @@
         <module>Section5UsingProjectLombokwithSpringBoot</module>
         <module>Section6SpringMVCRestServices</module>
         <module>Section7SpringMockMVCTestwithMockitoandJUnit</module>
+        <module>Section8ExceptionHandlingwithSpringMVC</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
 </project>
