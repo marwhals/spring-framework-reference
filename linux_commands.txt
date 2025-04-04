@@ -1,0 +1,1 @@
+find . -name pom.xml | xargs grep "<artifactId>spring-6-rest-mvc</artifactId>"

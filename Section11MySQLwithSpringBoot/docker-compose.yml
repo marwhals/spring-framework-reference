@@ -1,0 +1,43 @@
+version: '3.8'
+## Docker compose file to maintain clean environment between different machines
+# This script will pull the MySQL image if it has not already been downloaded
+# Create and start a mysql-db container with typed settings
+# Expose on port 3306
+
+# Includes optional UI for DB management (Adminer via browser)
+## Reference commands
+##  mkdir mysql-docker ////directory for project
+##  cd mysql-docker
+##  docker-compose up -d
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword     # Set the MySQL root password
+      MYSQL_DATABASE: mydatabase           # Set the name of the default database
+      MYSQL_USER: myuser                   # Set a username for MySQL
+      MYSQL_PASSWORD: mypassword           # Set the password for the above user
+    ports:
+      - "3306:3306"                         # Expose MySQL port
+    volumes:
+      - mysql-data:/var/lib/mysql           # Persist data on your machine
+    networks:
+      - mysql-network
+
+  # Optional: Adminer for web-based database management
+  adminer:
+    image: adminer
+    container_name: adminer
+    ports:
+      - "8080:8080"                        # Access Adminer UI on localhost:8080
+    networks:
+      - mysql-network
+
+volumes:
+  mysql-data:                                  # Persistent storage for MySQL data
+
+networks:
+  mysql-network:
+    driver: bridge
