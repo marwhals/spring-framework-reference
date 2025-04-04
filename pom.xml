@@ -17,6 +17,7 @@
         <module>Section7SpringMockMVCTestwithMockitoandJUnit</module>
         <module>Section8ExceptionHandlingwithSpringMVC</module>
         <module>Section9SpringDataJPAwithSpringMVC</module>
+        <module>Section10DataValidationWithSpring</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
 </project>
