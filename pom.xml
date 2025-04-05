@@ -21,6 +21,7 @@
         <module>Section11MySQLwithSpringBoot</module>
         <module>Section12FlywayMigrationsWithSpringBoot</module>
         <module>Section13UsingTestContainerswithSpringBoot</module>
+        <module>Section14CSVFileUploads</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
