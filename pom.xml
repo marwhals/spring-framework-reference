@@ -23,6 +23,7 @@
         <module>Section13UsingTestContainerswithSpringBoot</module>
         <module>Section14CSVFileUploads</module>
         <module>Section15QueryParameterswithSpringMVC</module>
+        <module>Section16PagingandSortingwithSpringMVC</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
