@@ -24,9 +24,6 @@ import org.hibernate.type.SqlTypes;
 import java.sql.Timestamp;
 import java.util.UUID;
 
-/**
- * Created by jt on 2019-01-26.
- */
 @Getter
 @Setter
 @NoArgsConstructor

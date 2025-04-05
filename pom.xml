@@ -27,6 +27,7 @@
         <module>Section17JPADatabaseRelationshipMappings</module>
         <module>Section18DatabaseTransactionsandLockingandSpring</module>
         <module>Section19IntroductionToSpringDataREST</module>
+        <module>Section20UsingSpringRESTTemplate</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
