@@ -25,6 +25,7 @@
         <module>Section15QueryParameterswithSpringMVC</module>
         <module>Section16PagingandSortingwithSpringMVC</module>
         <module>Section17JPADatabaseRelationshipMappings</module>
+        <module>Section18DatabaseTransactionsandLockingandSpring</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
