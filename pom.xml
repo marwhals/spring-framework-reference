@@ -29,6 +29,7 @@
         <module>Section19IntroductionToSpringDataREST</module>
         <module>Section20UsingSpringRESTTemplate</module>
         <module>Section21TestingSpringRestTemplate</module>
+        <module>Section22SpringSecurityHTTPBasicAuth</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>

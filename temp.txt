@@ -1,0 +1,3 @@
+Useful command
+
+git rm --cached filename
