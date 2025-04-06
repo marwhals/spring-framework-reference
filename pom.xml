@@ -37,6 +37,7 @@
         <module>Section27SpringDataR2DBC</module>
         <module>Section28SpringWebFluxRestServices</module>
         <module>Section29SpringWebFluxWebTestClient</module>
+        <module>Section30ExceptionHandlingwithSpringWebFlux</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
