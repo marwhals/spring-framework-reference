@@ -41,6 +41,7 @@
         <module>Section31SpringDataMongoDB</module>
         <module>Section32IntroductionandSpringWebFluxfnResource</module>
         <module>Section33SpringWebClient</module>
+        <module>Section34SpringWebFluxResourceServer</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
