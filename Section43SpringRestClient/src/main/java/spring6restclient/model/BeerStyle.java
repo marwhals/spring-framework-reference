@@ -1,4 +1,4 @@
-package spring6restmvc.model;
+package spring6restclient.model;
 
 
 public enum BeerStyle {

@@ -46,6 +46,9 @@
         <module>Section36UsingOAuth20withSpringWebClient</module>
         <module>Section37SpringCloudGateway</module>
         <module>Section38SpringBootMavenPlugin</module>
+        <module>Section40OpenAPIwithSpringBoot</module>
+        <module>Section41OpenAPIValidationwithRestAssured</module>
+        <module>Section43SpringRestClient</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
 </project>
