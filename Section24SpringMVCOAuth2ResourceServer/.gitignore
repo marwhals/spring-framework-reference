@@ -31,7 +31,3 @@ build/
 
 ### VS Code ###
 .vscode/
-
-### specific files and scripts ###
-todolist.md
-*.sh
