@@ -49,6 +49,10 @@
         <module>Section40OpenAPIwithSpringBoot</module>
         <module>Section41OpenAPIValidationwithRestAssured</module>
         <module>Section43SpringRestClient</module>
+        <module>Section44SpringBootActuator</module>
+        <module>Section45RequestLogging</module>
+        <module>Section46CachingDataWithSpringFramework</module>
+        <module>Section47SpringApplicationEventsforAuditing</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
 </project>
