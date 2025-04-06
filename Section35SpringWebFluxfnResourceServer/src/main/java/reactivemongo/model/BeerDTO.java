@@ -1,4 +1,4 @@
-package spring6reactive.model;
+package reactivemongo.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @Builder
 public class BeerDTO {
 
-    private Integer id;
+    private String id;
 
     @NotBlank
     @Size(min = 3, max = 255)

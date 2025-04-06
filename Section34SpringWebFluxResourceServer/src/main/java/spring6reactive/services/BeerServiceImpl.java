@@ -9,9 +9,7 @@ import org.springframework.util.StringUtils;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-/**
- * Created by jt, Spring Framework Guru.
- */
+
 @Service
 @RequiredArgsConstructor
 public class BeerServiceImpl implements BeerService {

@@ -1,4 +1,4 @@
-package spring6reactive.model;
+package reactivemongo.model;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 @Builder
 public class CustomerDTO {
 
-    private Integer id;
+    private String id;
 
     @NotBlank
     private String customerName;

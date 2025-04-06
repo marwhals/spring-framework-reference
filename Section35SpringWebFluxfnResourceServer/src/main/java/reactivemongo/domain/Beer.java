@@ -1,11 +1,11 @@
-package spring6reactive.model;
+package reactivemongo.domain;
 
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -15,18 +15,13 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerDTO {
+@Document
+public class Beer {
 
-    private Integer id;
-
-    @NotBlank
-    @Size(min = 3, max = 255)
+    @Id
+    private String id;
     private String beerName;
-
-    @Size(min = 1, max = 255)
     private String beerStyle;
-
-    @Size(max = 25)
     private String upc;
     private Integer quantityOnHand;
     private BigDecimal price;

@@ -4,9 +4,7 @@ import spring6reactive.model.CustomerDTO;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-/**
- * Created by jt, Spring Framework Guru.
- */
+
 public interface CustomerService {
     Flux<CustomerDTO> listCustomers();
 

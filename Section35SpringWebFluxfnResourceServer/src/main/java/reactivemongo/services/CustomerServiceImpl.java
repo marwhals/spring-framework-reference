@@ -1,8 +1,9 @@
-package spring6reactive.services;
+package reactivemongo.services;
 
-import spring6reactive.mappers.CustomerMapper;
-import spring6reactive.model.CustomerDTO;
-import spring6reactive.repositories.CustomerRepository;
+
+import reactivemongo.mappers.CustomerMapper;
+import reactivemongo.model.CustomerDTO;
+import reactivemongo.repositories.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -23,7 +24,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Mono<CustomerDTO> getCustomerById(Integer customerId) {
+    public Mono<CustomerDTO> getCustomerById(String customerId) {
         return customerRepository.findById(customerId)
                 .map(customerMapper::customerToCustomerDto);
     }
@@ -35,7 +36,14 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Mono<CustomerDTO> updateCustomer(Integer customerId, CustomerDTO customerDTO) {
+    public Mono<CustomerDTO> saveNewCustomer(Mono<CustomerDTO> customerDTO) {
+        return customerDTO.map(customerMapper::customerDtoToCustomer)
+                .flatMap(customerRepository::save)
+                .map(customerMapper::customerToCustomerDto);
+    }
+
+    @Override
+    public Mono<CustomerDTO> updateCustomer(String customerId, CustomerDTO customerDTO) {
         return customerRepository.findById(customerId)
                 .map(customer -> {
                     customer.setCustomerName(customerDTO.getCustomerName());
@@ -45,7 +53,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Mono<CustomerDTO> patchCustomer(Integer customerId, CustomerDTO customerDTO) {
+    public Mono<CustomerDTO> patchCustomer(String customerId, CustomerDTO customerDTO) {
         return customerRepository.findById(customerId)
                 .map(customer -> {
                     if (StringUtils.hasText(customerDTO.getCustomerName())){
@@ -57,7 +65,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Mono<Void> deleteCustomerById(Integer customerId) {
+    public Mono<Void> deleteCustomerById(String customerId) {
         return customerRepository.deleteById(customerId);
     }
 }

@@ -11,9 +11,7 @@ import org.springframework.data.annotation.LastModifiedDate;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-/**
- * Created by jt, Spring Framework Guru.
- */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

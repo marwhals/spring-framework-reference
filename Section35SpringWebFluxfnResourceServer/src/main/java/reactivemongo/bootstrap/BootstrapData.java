@@ -1,9 +1,9 @@
-package spring6reactive.bootstrap;
+package reactivemongo.bootstrap;
 
-import spring6reactive.domain.Beer;
-import spring6reactive.domain.Customer;
-import spring6reactive.repositories.BeerRepository;
-import spring6reactive.repositories.CustomerRepository;
+import reactivemongo.domain.Beer;
+import reactivemongo.domain.Customer;
+import reactivemongo.repositories.BeerRepository;
+import reactivemongo.repositories.CustomerRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -12,48 +12,27 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 
-@RequiredArgsConstructor
 @Component
-public class BootStrapData implements CommandLineRunner {
+@RequiredArgsConstructor
+public class BootstrapData implements CommandLineRunner {
 
     private final BeerRepository beerRepository;
     private final CustomerRepository customerRepository;
 
     @Override
     public void run(String... args) throws Exception {
-        loadBeerData();
-        loadCustomerData();
-        beerRepository.count().subscribe(count -> {
-            System.out.println("Beer Count is: " + count);
-        });
+        beerRepository.deleteAll()
+                .doOnSuccess(success -> {
+                    loadBeerData();
+                }).subscribe();
 
-        customerRepository.count().subscribe(count -> {
-            System.out.println("Customer Count is: " + count);
-        });
-    }
-
-    private void loadCustomerData() {
-        customerRepository.count().subscribe(count -> {
-            if(count == 0){
-                customerRepository.save(Customer.builder()
-                        .customerName("Customer 1")
-                        .build())
-                        .subscribe();
-
-                customerRepository.save(Customer.builder()
-                                .customerName("Customer 2")
-                                .build())
-                        .subscribe();
-
-                customerRepository.save(Customer.builder()
-                                .customerName("Customer 3")
-                                .build())
-                        .subscribe();
-            }
-        });
+        customerRepository.deleteAll()
+                .doOnSuccess(success -> loadCustomerData())
+                .subscribe();
     }
 
     private void loadBeerData() {
+
         beerRepository.count().subscribe(count -> {
             if (count == 0) {
                 Beer beer1 = Beer.builder()
@@ -86,9 +65,38 @@ public class BootStrapData implements CommandLineRunner {
                         .lastModifiedDate(LocalDateTime.now())
                         .build();
 
-                beerRepository.save(beer1).subscribe();
-                beerRepository.save(beer2).subscribe();
-                beerRepository.save(beer3).subscribe();
+                beerRepository.save(beer1).subscribe(beer -> {
+                    System.out.println(beer.toString());
+                });
+                beerRepository.save(beer2).subscribe(beer -> {
+                    System.out.println(beer.toString());
+                });
+                beerRepository.save(beer3).subscribe(beer -> {
+                    System.out.println(beer.toString());
+                });
+
+                System.out.println("Loaded Beers: " + beerRepository.count().block());
+            }
+        });
+    }
+
+    private void loadCustomerData() {
+        customerRepository.count().subscribe(count -> {
+            if(count == 0){
+                customerRepository.save(Customer.builder()
+                                .customerName("Customer 1")
+                                .build())
+                        .subscribe();
+
+                customerRepository.save(Customer.builder()
+                                .customerName("Customer 2")
+                                .build())
+                        .subscribe();
+
+                customerRepository.save(Customer.builder()
+                                .customerName("Customer 3")
+                                .build())
+                        .subscribe();
             }
         });
     }

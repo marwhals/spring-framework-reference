@@ -12,9 +12,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-/**
- * Created by jt, Spring Framework Guru.
- */
+
 @RestController
 @RequiredArgsConstructor
 public class CustomerController {
