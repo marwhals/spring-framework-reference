@@ -18,9 +18,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicReference;
 
-/**
- * Created by jt, Spring Framework Guru.
- */
+
 @Service
 @Primary
 @RequiredArgsConstructor

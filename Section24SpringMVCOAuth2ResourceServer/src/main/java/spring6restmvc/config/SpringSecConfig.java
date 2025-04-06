@@ -6,9 +6,7 @@ import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.web.SecurityFilterChain;
 
-/**
- * Created by jt, Spring Framework Guru.
- */
+
 @Configuration
 public class SpringSecConfig {
 

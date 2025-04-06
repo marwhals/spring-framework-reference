@@ -14,9 +14,7 @@ import java.util.UUID;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
-/**
- * Created by jt, Spring Framework Guru.
- */
+
 @Service
 @Primary
 @RequiredArgsConstructor

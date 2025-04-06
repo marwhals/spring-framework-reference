@@ -32,6 +32,7 @@
         <module>Section22SpringSecurityHTTPBasicAuth</module>
         <module>Section23SpringAuthorizationServer</module>
         <module>Section24SpringMVCOAuth2ResourceServer</module>
+        <module>Section25SpringRestTemplatewithOAuth2</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
