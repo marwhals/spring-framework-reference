@@ -39,6 +39,7 @@
         <module>Section29SpringWebFluxWebTestClient</module>
         <module>Section30ExceptionHandlingwithSpringWebFlux</module>
         <module>Section31SpringDataMongoDB</module>
+        <module>Section32IntroductionandSpringWebFluxfnResource</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
