@@ -34,6 +34,7 @@
         <module>Section24SpringMVCOAuth2ResourceServer</module>
         <module>Section25SpringRestTemplatewithOAuth2</module>
         <module>Section26IntroductiontoReactiveProgrammingwithSpring</module>
+        <module>Section27SpringDataR2DBC</module>
         <module>Section38SpringBootMavenPlugin</module>
         <module>Section53SpringBootMicroserviceswithApacheKafka</module>
     </modules>
