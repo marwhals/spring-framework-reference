@@ -1,4 +1,4 @@
-package guru.springframework.spring6restmvc.model;
+package springframework.spring6restmvc.model;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

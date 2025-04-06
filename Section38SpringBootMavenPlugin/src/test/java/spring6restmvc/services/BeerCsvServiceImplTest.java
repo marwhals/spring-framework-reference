@@ -1,6 +1,6 @@
-package guru.springframework.spring6restmvc.services;
+package spring6restmvc.services;
 
-import guru.springframework.spring6restmvc.model.BeerCSVRecord;
+import spring6restmvc.model.BeerCSVRecord;
 import org.junit.jupiter.api.Test;
 import org.springframework.util.ResourceUtils;
 

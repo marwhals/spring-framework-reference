@@ -1,4 +1,4 @@
-package guru.springframework.spring6restmvc.config;
+package springframework.spring6restmvc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,7 +1,7 @@
-package guru.springframework.spring6restmvc.repositories;
+package spring6restmvc.repositories;
 
-import guru.springframework.spring6restmvc.entities.Beer;
-import guru.springframework.spring6restmvc.model.BeerStyle;
+import spring6restmvc.entities.Beer;
+import spring6restmvc.model.BeerStyle;
 import jakarta.validation.ConstraintViolationException;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

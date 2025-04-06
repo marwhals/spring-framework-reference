@@ -1,7 +1,7 @@
-package guru.springframework.spring6restmvc.bootstrap;
+package spring6restmvc.bootstrap;
 
-import guru.springframework.spring6restmvc.repositories.BeerRepository;
-import guru.springframework.spring6restmvc.repositories.CustomerRepository;
+import spring6restmvc.repositories.BeerRepository;
+import spring6restmvc.repositories.CustomerRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

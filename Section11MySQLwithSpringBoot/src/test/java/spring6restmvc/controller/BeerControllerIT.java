@@ -1,10 +1,10 @@
-package guru.springframework.spring6restmvc.controller;
+package spring6restmvc.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import guru.springframework.spring6restmvc.entities.Beer;
-import guru.springframework.spring6restmvc.mappers.BeerMapper;
-import guru.springframework.spring6restmvc.model.BeerDTO;
-import guru.springframework.spring6restmvc.repositories.BeerRepository;
+import spring6restmvc.entities.Beer;
+import spring6restmvc.mappers.BeerMapper;
+import spring6restmvc.model.BeerDTO;
+import spring6restmvc.repositories.BeerRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

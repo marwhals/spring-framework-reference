@@ -1,9 +1,9 @@
-package guru.springframework.spring6restmvc.controller;
+package spring6restmvc.controller;
 
-import guru.springframework.spring6restmvc.entities.Customer;
-import guru.springframework.spring6restmvc.mappers.CustomerMapper;
-import guru.springframework.spring6restmvc.model.CustomerDTO;
-import guru.springframework.spring6restmvc.repositories.CustomerRepository;
+import spring6restmvc.entities.Customer;
+import spring6restmvc.mappers.CustomerMapper;
+import spring6restmvc.model.CustomerDTO;
+import spring6restmvc.repositories.CustomerRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

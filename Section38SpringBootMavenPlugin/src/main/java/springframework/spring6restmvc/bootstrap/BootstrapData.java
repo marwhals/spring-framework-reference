@@ -1,12 +1,12 @@
-package guru.springframework.spring6restmvc.bootstrap;
+package springframework.spring6restmvc.bootstrap;
 
-import guru.springframework.spring6restmvc.entities.Beer;
-import guru.springframework.spring6restmvc.entities.Customer;
-import guru.springframework.spring6restmvc.model.BeerCSVRecord;
-import guru.springframework.spring6restmvc.model.BeerStyle;
-import guru.springframework.spring6restmvc.repositories.BeerRepository;
-import guru.springframework.spring6restmvc.repositories.CustomerRepository;
-import guru.springframework.spring6restmvc.services.BeerCsvService;
+import spring6restmvc.entities.Beer;
+import spring6restmvc.entities.Customer;
+import spring6restmvc.model.BeerCSVRecord;
+import spring6restmvc.model.BeerStyle;
+import spring6restmvc.repositories.BeerRepository;
+import spring6restmvc.repositories.CustomerRepository;
+import spring6restmvc.services.BeerCsvService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.boot.CommandLineRunner;
