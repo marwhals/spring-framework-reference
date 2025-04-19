@@ -35,3 +35,4 @@ build/
 ### specific files and scripts ###
 todolist.md
 *.sh
+*.txt

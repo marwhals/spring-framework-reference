@@ -23,7 +23,6 @@ import java.util.concurrent.atomic.AtomicReference;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.awaitility.Awaitility.await;
 
-@Testcontainers
 @SpringBootTest
 class BeerServiceImplTest {
 
