@@ -2,5 +2,4 @@
 
 ---
 
-Purpose of this repo is to store spring related code snippets and notes for use on future projects.
-
+Purpose of this repo is to serve as a personal reference for the Spring Framework.
