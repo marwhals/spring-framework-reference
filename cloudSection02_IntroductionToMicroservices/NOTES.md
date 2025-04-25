@@ -186,5 +186,3 @@
 *See website for useful perspective*
 
 https://12factor.net/
-
-## 
