@@ -33,8 +33,6 @@
         <module>Section24SpringMVCOAuth2ResourceServer</module>
         <module>Section25SpringRestTemplatewithOAuth2</module>
         <module>Section26IntroductiontoReactiveProgrammingwithSpring</module>
-        <module>Section27SpringDataR2DBC</module>
-        <module>Section28SpringWebFluxRestServices</module>
         <module>Section29SpringWebFluxWebTestClient</module>
         <module>Section30ExceptionHandlingwithSpringWebFlux</module>
         <module>Section31SpringDataMongoDB</module>
