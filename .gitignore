@@ -36,3 +36,11 @@ build/
 todolist.md
 *.sh
 *.txt
+
+
+*.java
+*.springBeans
+*.sts4-cache
+*.settings
+*.properties
+*.xml

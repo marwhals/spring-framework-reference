@@ -1,7 +1,0 @@
-Useful command
-
-git rm --cached filename
-
-git log --oneline --author="John Doe" > "$output_file"
-
-git log --since="2022-01-01" --until="2022-12-31" > "$output_file"
