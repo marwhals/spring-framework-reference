@@ -19,3 +19,11 @@ The purpose of this repo is to serve as a personal reference for the Spring Fram
 
 ### Micronaut
 - [Placehodler]()
+
+### Other
+- [Lmax]()
+- [Aeron]()
+- [Agrona]()
+- [Chronicle Queue]()
+- [ZeroMQ]()
+- [QuickFIX](https://www.quickfixj.org/)
