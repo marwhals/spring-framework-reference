@@ -15,10 +15,13 @@ The purpose of this repo is to serve as a personal reference for the Spring Fram
 - [Placeholder]()
 
 ### Vert.x
+- [Vert.x Reactive SQL]()
+- [Vert.x Reactive Mutiny]()
+- [Quarkus Reactive Vert.x]()
 - [Vert.x Web Sockets]()
 
 ### Micronaut
-- [Placehodler]()
+- [Placeholder]()
 
 ### Other
 - [Lmax]()
